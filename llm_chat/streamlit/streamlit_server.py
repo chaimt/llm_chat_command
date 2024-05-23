@@ -10,8 +10,6 @@ with st.sidebar:
     option = st.selectbox("LLM Model?", ("GPT3.5", "GPT4", "GPT4o"))
 
 
-
-
 st.title("Ask Anything")
 # with st.chat_message("user"):
 with st.container(border=True):
@@ -62,4 +60,3 @@ with st.expander("See log"):
     table += "</table></tbody>"
 
     st.markdown(table, unsafe_allow_html=True)
-

@@ -9,7 +9,6 @@ from pydantic import BaseModel
 from llm_chat.helper.data_class import DataClassYAMLMixinNullRemoval
 from llm_chat.helper.single_instance_metaclass import SingleInstanceMetaClass
 
-
 _ = load_dotenv(dotenv_path=find_dotenv(), override=True)  # read local .env file
 
 
@@ -39,7 +38,6 @@ class MyConfig(metaclass=SingleInstanceMetaClass):
         self.enable_redis = os.getenv("ENABLE_REDIS", "True") == "True"
         self.redis_host = os.getenv("REDIS_HOST", "localhost")
         self.redis_port = int(os.getenv("REDIS_PORT", "6379"))
-
 
         self.state = ApplicationState()
 

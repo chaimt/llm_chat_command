@@ -76,4 +76,3 @@ build: ## build project
 ide: ## build project
 	source $(VIRTUAL_ENV)/bin/activate &&\
 	code .
-
