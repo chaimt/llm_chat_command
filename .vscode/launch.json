@@ -19,7 +19,7 @@
             "module": "streamlit",
             "args": [
                  "run",
-                 "llm_chat_command/streamlit/streamlit_server.py",
+                 "llm_chat/streamlit/streamlit_server.py",
                  "--server.port",
                  "8000"
             ]
