@@ -73,5 +73,3 @@ class ChatRouter(metaclass=SingleInstanceMetaClass):
         return False
 
 
-# if __name__ == "__main__":
-#     ChatRouter().get_command("list files from storage")
